@@ -1,0 +1,17 @@
+Data Exploration
+
+Starting with some basic queries to get familair with the dataset and its main features.
+
+1) I will check the size of the dataset. Since the dataset I found on Kaggle states that each row is a unique customer, the total number of rows should also be
+equal to the number of unique customers. I will double-check it myself just in case.  
+
+SELECT COUNT(*)
+FROM `sql_portfolio.bank_csv`
+
+SELECT COUNT(DISTINCT(CLIENTNUM))
+FROM `sql_portfolio.bank_csv`
+
+In both cases, I get 10,127 as a result, which means that effectively the dataset contains the information of unique customers.
+
+
+
